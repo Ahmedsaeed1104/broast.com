@@ -912,244 +912,296 @@ height: 25px;
 
 
         
-            <!-- CALCULATE ORDER  _______________________________________________________________________________________________________________________________________________ -->
-            <section id="order">
-                <h2>Calculate Order</h2>
-                <div id="item-list">
-                    <h3>Items</h3>
-                    <!----------------------------HAPPY MEALS------------------------------------->
-                    <div class="item">
-                        <input type="checkbox" id="item1" data-price="70">
-                        <span>Happy Meal Nuggets</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item2" data-price="70">
-                        <span>HAPPY MEAL BURGER</span>
-
-                    <!---------------------------SIDE ITEMS-------------------------------------->
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item3" data-price="48">
-                        <span>قطعة دجاج</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item4" data-price="32">
-                        <span>قطعة كريسبي</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item5" data-price="17">
-                        <span>ارز مبهر</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item6" data-price="60">
-                        <span>ريزو بسمتي</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item7" data-price="60">
-                        <span>هاليبينو ستكس</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item8" data-price="70">
-                        <span>فتة ريزو</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item9" data-price="15">
-                        <span>صوص جبنة</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item10" data-price="12">
-                        <span>ثومية</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item11" data-price="12">
-                        <span>صوص شيلي تايجر</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item12" data-price="1.5">
-                        <span>قطعة خبز</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item13" data-price="12">
-                        <span>كولسلو</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item14" data-price="10">
-                        <span>فلفل هاليبينو</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item15" data-price="12">
-                        <span>بيبسي CAN</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item16" data-price="20">
-                        <span>بيبسي LTR</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item17" data-price="6">
-                        <span>مياة</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item18" data-price="12">
-                        <span>عصير جهينة</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item19" data-price="30">
-                        <span>بطاطس </span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item20" data-price="40">
-                        <span>بطاطس بالجبنة</span>
-                    
-                    <!----------------------------SANDWICHES------------------------------------->
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item21" data-price="75">
-                        <span>سوبر دراجون SUPER DRAGON-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item22" data-price="95">
-                        <span>سوبر دراجون SUPER DRAGON-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item23" data-price="83">
-                        <span>رومي بروست ROMI BROEST-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item24" data-price="101">
-                        <span>رومي بروست ROMI BROEST-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item25" data-price="70">
-                        <span>تشكن كرسبي CHICKEN CRISPY-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item26" data-price="90">
-                        <span>تشكن كرسبي CHICKEN CRISPY-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item27" data-price="75">
-                        <span>سوبر بروست SUPER BROEST-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item28" data-price="95">
-                        <span>سوبر بروست SUPER BROEST-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item29" data-price="70">
-                        <span>زينجر  ZINGER-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item30" data-price="90">
-                        <span>زينجر  ZINGER-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item31" data-price="80">
-                        <span>هاليبينو بروست HALLIBINO BROEST-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item32" data-price="95">
-                        <span>هاليبينو بروست HALLIBINO BROEST-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item33" data-price="50">
-                        <span>برجر BURGER</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item34" data-price="55">
-                        <span>تشيز برجر  CHEESE BURGER</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item35" data-price="98">
-                        <span>جامبو رول JUMBO ROLL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item36" data-price="70">
-                        <span>رول بروست  ROLL BROEST</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item37" data-price="70">
-                        <span>روند تشكن - ROUND CHICKEN</span>
-
-                    <!----------------------------FAMILY MEALS------------------------------------->
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item42" data-price="75">
-                        <span>روند تشكن رومي  ROUND CHICKEN ROMI </span>
-                    </div>
-
-                    <div class="item">
-                        <input type="checkbox" id="item39" data-price="485">
-                        <span>سوبر فاميلي SUPER FAMILY</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item40" data-price="510">
-                        <span>فاميلي ستربس FAMILY STRIPS</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item41" data-price="445">
-                        <span>بارتي ميل  PARTY MEAL</span>
-
-                    <!---------------------------- SPECIAL SANDWICHES------------------------------------->
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item38" data-price="360">
-                        <span>فاميلي ميل  FAMILY MEAL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item43" data-price="83">
-                        <span>سلامي بروست  SALAMI BROEST-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item44" data-price="101">
-                        <span>سلامي بروست  SALAMI BROEST-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item45" data-price="75">
-                        <span>تشكن بلوتشيز CHICKEN BLUE CHEESE-L</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item46" data-price="95">
-                        <span>تشكن بلوتشيز CHICKEN BLUE CHEESE-XL</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item47" data-price="75">
-                        <span>روند تشكن سلامي  ROUND CHICKEN SALAMI</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item48" data-price="85">
-                        <span>روند تشكن ميكس ROUND CHICKEN MIX</span>
-
-                    <!---------------------------- INDIVIDUAL MEALS ------------------------------------->
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item49" data-price="95">
-                        <span>سناك بوكس Snack Box</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item50" data-price="135">
-                        <span>دينر بوكس DINNER BOX</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item51" data-price="95">
-                        <span>لايت كرسبي LIGHT CRISPY</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item52" data-price="160">
-                        <span>ميكس ميل MIX MEALS</span>
-                    </div>
-                    <div class="item">
-                        <input type="checkbox" id="item53" data-price="135">
-                        <span>كرسبي بوكس CRISPY BOX</span>
-                    </div>
-                    
-                    
+          <!-----------CALCULATE ORDER--------------------->
+        <section id="order">
+            <h2>Calculate Order</h2>
+            <div id="item-list">
+                <h3>Items</h3>
+                <!----------------------------HAPPY MEALS------------------------------------->
+                <div class="item">
+                    <input type="checkbox" id="item1" data-price="70">
+                    <span>Happy Meal Nuggets</span>
+                    <input type="number" id="quantity1" min="1" value="1" style="margin-left: 10px; width: 30px;">
                 </div>
-                <div class="delivery-container">
-                    <input type="checkbox" id="delivery" data-price="15">
-                    <span class="delivery-label">With Delivery +15 pounds</span>
+                <div class="item">
+                    <input type="checkbox" id="item2" data-price="70">
+                    <span>Happy Meal Burger</span>
+                    <input type="number" id="quantity2" min="1" value="1" style="margin-left: 10px; width: 30px;">
                 </div>
-                <div id="total">Total: 0 pounds</div>
-            </section>
+    
+                <!---------------------------SIDE ITEMS-------------------------------------->
+                <div class="item">
+                    <input type="checkbox" id="item3" data-price="48">
+                    <span>قطعة دجاج</span>
+                    <input type="number" id="quantity3" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item4" data-price="32">
+                    <span>قطعة كريسبي</span>
+                    <input type="number" id="quantity4" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item5" data-price="17">
+                    <span>ارز مبهر</span>
+                    <input type="number" id="quantity5" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item6" data-price="60">
+                    <span>ريزو بسمتي</span>
+                    <input type="number" id="quantity6" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item7" data-price="60">
+                    <span>هاليبينو ستكس</span>
+                    <input type="number" id="quantity7" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item8" data-price="70">
+                    <span>فتة ريزو</span>
+                    <input type="number" id="quantity8" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item9" data-price="15">
+                    <span>صوص جبنة</span>
+                    <input type="number" id="quantity9" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item10" data-price="12">
+                    <span>ثومية</span>
+                    <input type="number" id="quantity10" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item11" data-price="12">
+                    <span>صوص شيلي تايجر</span>
+                    <input type="number" id="quantity11" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item12" data-price="1.5">
+                    <span>قطعة خبز</span>
+                    <input type="number" id="quantity12" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item13" data-price="12">
+                    <span>كولسلو</span>
+                    <input type="number" id="quantity13" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item14" data-price="10">
+                    <span>فلفل هاليبينو</span>
+                    <input type="number" id="quantity14" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item15" data-price="12">
+                    <span>بيبسي CAN</span>
+                    <input type="number" id="quantity15" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item16" data-price="20">
+                    <span>بيبسي LTR</span>
+                    <input type="number" id="quantity16" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item17" data-price="6">
+                    <span>مياة</span>
+                    <input type="number" id="quantity17" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item18" data-price="12">
+                    <span>عصير جهينة</span>
+                    <input type="number" id="quantity18" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item19" data-price="30">
+                    <span>بطاطس</span>
+                    <input type="number" id="quantity19" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item20" data-price="40">
+                    <span>بطاطس بالجبنة</span>
+                    <input type="number" id="quantity20" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+    
+                <!----------------------------SANDWICHES------------------------------------->
+                <div class="item">
+                    <input type="checkbox" id="item21" data-price="75">
+                    <span>سوبر دراجون SUPER DRAGON-L</span>
+                    <input type="number" id="quantity21" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item22" data-price="95">
+                    <span>سوبر دراجون SUPER DRAGON-XL</span>
+                    <input type="number" id="quantity22" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item23" data-price="83">
+                    <span>رومي بروست ROMI BROEST-L</span>
+                    <input type="number" id="quantity23" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item24" data-price="101">
+                    <span>رومي بروست ROMI BROEST-XL</span>
+                    <input type="number" id="quantity24" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item25" data-price="70">
+                    <span>تشكن كرسبي CHICKEN CRISPY-L</span>
+                    <input type="number" id="quantity25" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item26" data-price="90">
+                    <span>تشكن كرسبي CHICKEN CRISPY-XL</span>
+                    <input type="number" id="quantity26" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item27" data-price="75">
+                    <span>سوبر بروست SUPER BROEST-L</span>
+                    <input type="number" id="quantity27" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item28" data-price="95">
+                    <span>سوبر بروست SUPER BROEST-XL</span>
+                    <input type="number" id="quantity28" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item29" data-price="70">
+                    <span>زينجر ZINGER-L</span>
+                    <input type="number" id="quantity29" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item30" data-price="90">
+                    <span>زينجر ZINGER-XL</span>
+                    <input type="number" id="quantity30" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item31" data-price="80">
+                    <span>هاليبينو بروست HALLIBINO BROEST-L</span>
+                    <input type="number" id="quantity31" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item32" data-price="95">
+                    <span>هاليبينو بروست HALLIBINO BROEST-XL</span>
+                    <input type="number" id="quantity32" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item33" data-price="50">
+                    <span>برجر BURGER</span>
+                    <input type="number" id="quantity33" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item34" data-price="55">
+                    <span>تشيز برجر CHEESE BURGER</span>
+                    <input type="number" id="quantity34" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item35" data-price="98">
+                    <span>جامبو رول JUMBO ROLL</span>
+                    <input type="number" id="quantity35" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item36" data-price="70">
+                    <span>رول بروست ROLL BROEST</span>
+                    <input type="number" id="quantity36" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item37" data-price="70">
+                    <span>روند تشكن - ROUND CHICKEN</span>
+                    <input type="number" id="quantity37" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+    
+                <!----------------------------FAMILY MEALS------------------------------------->
+                <div class="item">
+                    <input type="checkbox" id="item42" data-price="75">
+                    <span>روند تشكن رومي ROUND CHICKEN ROMI</span>
+                    <input type="number" id="quantity42" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item39" data-price="485">
+                    <span>سوبر فاميلي SUPER FAMILY</span>
+                    <input type="number" id="quantity39" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item40" data-price="510">
+                    <span>فاميلي ستربس FAMILY STRIPS</span>
+                    <input type="number" id="quantity40" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item41" data-price="445">
+                    <span>بارتي ميل PARTY MEAL</span>
+                    <input type="number" id="quantity41" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+    
+                <!----------------------------SPECIAL SANDWICHES------------------------------------->
+                <div class="item">
+                    <input type="checkbox" id="item38" data-price="360">
+                    <span>فاميلي ميل FAMILY MEAL</span>
+                    <input type="number" id="quantity38" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item43" data-price="83">
+                    <span>سلامي بروست SALAMI BROEST-L</span>
+                    <input type="number" id="quantity43" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item44" data-price="101">
+                    <span>سلامي بروست SALAMI BROEST-XL</span>
+                    <input type="number" id="quantity44" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item45" data-price="75">
+                    <span>تشكن بلوتشيز CHICKEN BLUE CHEESE-L</span>
+                    <input type="number" id="quantity45" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item46" data-price="95">
+                    <span>تشكن بلوتشيز CHICKEN BLUE CHEESE-XL</span>
+                    <input type="number" id="quantity46" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item47" data-price="75">
+                    <span>روند تشكن سلامي ROUND CHICKEN SALAMI</span>
+                    <input type="number" id="quantity47" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item48" data-price="85">
+                    <span>روند تشكن ميكس ROUND CHICKEN MIX</span>
+                    <input type="number" id="quantity48" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+    
+                <!---------------------------- INDIVIDUAL MEALS ------------------------------------->
+                <div class="item">
+                    <input type="checkbox" id="item49" data-price="95">
+                    <span>سناك بوكس Snack Box</span>
+                    <input type="number" id="quantity49" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item50" data-price="135">
+                    <span>دينر بوكس DINNER BOX</span>
+                    <input type="number" id="quantity50" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item51" data-price="95">
+                    <span>لايت كرسبي LIGHT CRISPY</span>
+                    <input type="number" id="quantity51" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item52" data-price="160">
+                    <span>ميكس ميل MIX MEALS</span>
+                    <input type="number" id="quantity52" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item53" data-price="135">
+                    <span>كرسبي بوكس CRISPY BOX</span>
+                    <input type="number" id="quantity53" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                </div>
+            </div>
+    
+            <div class="delivery-container">
+                <input type="checkbox" id="delivery" data-price="15">
+                <span class="delivery-label">With Delivery +15 pounds</span>
+            </div>
+    
+            <div id="total">Total: 0 pounds</div>
+        </section>
        
             
 
@@ -1192,36 +1244,34 @@ height: 25px;
     </footer>
 
     <script >
-        // Function to calculate the total order cost
 function calculateTotal() {
     let total = 0;
+    const items = document.querySelectorAll('.item');
     
-    // Get all checkboxes inside the item list
-    const items = document.querySelectorAll('#item-list .item input[type="checkbox"]');
-    
-    // Iterate through the checkboxes and add the price of checked items to the total
-    items.forEach(function(item) {
-        if (item.checked) {
-            total += parseInt(item.getAttribute('data-price'));
+    items.forEach(item => {
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        const quantityInput = item.querySelector('input[type="number"]');
+        const price = parseFloat(checkbox.dataset.price);
+        const quantity = parseInt(quantityInput.value);
+        
+        if (checkbox.checked) {
+            total += price * quantity;
         }
     });
-
-    // Check if delivery is selected and add its price
-    const delivery = document.getElementById('delivery');
-    if (delivery.checked) {
-        total += parseInt(delivery.getAttribute('data-price'));
+    
+    const deliveryCheckbox = document.getElementById('delivery');
+    if (deliveryCheckbox.checked) {
+        total += parseFloat(deliveryCheckbox.dataset.price);
     }
-
-    // Display the total price in the 'total' div
+    
     document.getElementById('total').textContent = `Total: ${total} pounds`;
 }
 
-// Add event listeners to all checkboxes to recalculate the total whenever an item is selected or deselected
-document.querySelectorAll('#item-list .item input[type="checkbox"], #delivery').forEach(function(checkbox) {
-    checkbox.addEventListener('change', calculateTotal);
+document.querySelectorAll('input[type="checkbox"], input[type="number"]').forEach(element => {
+    element.addEventListener('change', calculateTotal);
 });
 
-// Initial calculation in case any checkboxes are pre-checked
+// Initial calculation
 calculateTotal();
 
     </script>
