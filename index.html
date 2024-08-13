@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Broast Restaurant</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style></style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link   rel="icon"  href="https://i.ibb.co/d0myCyk/icon.png" /> 
     <style>
-
         /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color:#F7EFE5;
     color: #333;
     max-width: 100%; /* Ensures the body doesn't exceed the viewport width */
     box-sizing: border-box; /* Ensures padding is included in width calculations */
+    
 }
 
 header {
-    background-color: green;
+    background-color: rgb(10, 118, 69);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -68,16 +72,16 @@ section {
 }
 
 h2 {
-    color: green;
+    color:  rgb(10, 118, 69);
     border-bottom: 2px solid orange;
     padding-bottom: 5px;
 }
 
 footer {
-    background-color: green;
+    background-color: rgb(10, 118, 69);
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -116,7 +120,7 @@ footer {
     width: 100%;
     max-width: 1200px; /* Restricts content width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #ff9900;
+    border: 2px solid rgb(10, 118, 69);
     box-sizing: border-box;
 }
 
@@ -136,7 +140,7 @@ footer {
 #total {
     font-size: 20px;
     font-weight: bold;
-    color: #008000;
+    color: rgb(10, 118, 69);
     padding: 10px;
     background-color: white;
     border: 2px solid #ff9900;
@@ -146,7 +150,7 @@ footer {
 }
 
 #order h2 {
-    color: #008000;
+    color: rgb(10, 118, 69);
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
@@ -181,24 +185,20 @@ footer {
     box-sizing: border-box;
 }
 
-.menu-category {
-    flex: 1;
-    min-width: 300px;
-    max-width: 48%; /* Keeps items within 48% width */
-    margin: 10px 1%;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-}
+
 
 .menu-category h3 {
-    color: #ff9900;
-    font-size: 20px;
-    margin-bottom: 10px;
+    color: #ff9900; /* Keeps the original color */
+    font-size: 15px; /* Keeps the original font size */
+    margin-bottom: 10px; /* Keeps the original margin */
+    font-weight: 600; /* Slightly bolder text for emphasis */
+    line-height: 1.6; /* Increased line spacing for better readability */
+    text-align: center; /* Centers the text */
+    letter-spacing: 0.5px; /* Adds slight spacing between letters */
+    font-family: 'Cairo', sans-serif; /* Consistent Arabic font */
 }
+
+
 
 .menu-item {
     display: flex;
@@ -215,10 +215,23 @@ footer {
 }
 
 .menu-item h4 {
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger font size for better readability */
     margin: 0;
-    color: #333;
+    color: #333; /* A softer black for a more modern look */
+    font-family: 'Cairo', sans-serif; /* Stylish Arabic font */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase text for uniform look */
+    letter-spacing: 1px; /* Slight spacing between letters */
+    padding: 10px 0; /* Padding for better spacing */
+    border-bottom: 2px solid #ccc; /* A subtle line under each meal name */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition effect */
 }
+
+.menu-item h4:hover {
+    color: rgb(10, 118, 69); /* Change color on hover */
+    border-bottom-color: orange; /* Change border color on hover */
+}
+
 
 .menu-item p {
     font-size: 16px;
@@ -283,18 +296,24 @@ footer {
 }
 
 .menu_7, .menu_13, .menu_19, .menu_25, .menu_31, .menu_37 {
-    background-color: green;
+    background-color: rgb(10, 118, 69);
     color: white;
     padding: 10px;
     text-align: center;
     font-size: 24px;
 }
 
-.menu_8, .menu_14, .menu_20, .menu_26, .menu_32, .menu_38 {
+.menu_8,.menu_20, .menu_26, .menu_32, .menu_38 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
+}
+.menu_14{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%; 
 }
 
 .menu_9, .menu_15, .menu_21, .menu_27, .menu_33, .menu_39 {
@@ -321,28 +340,139 @@ footer {
 
 #MENU_IMG {
     max-width: 100%; /* Ensures images fit within the container */
-    height: auto;
+    height: 92px;
+    width: 140px;
 }
 
 #MENU_DIVS {
     max-width: 100%; /* Ensures divs fit within the container */
     height: auto;
 }
+#MENU_DIVS:hover{
+    background-color: #F7DCB9;
+}
+
+#PRICES{
+background-color:  rgb(10, 118, 69);
+color: orange;
+border-radius: 8%;
+font-size: 17px;
+padding-top: 2%;
+padding-bottom: 0%;
+margin: 0%;
+width: 40px;
+height: 25px;
+
+
+}
+
+/* Mobile Phone Adjustments (Increase photo width more in menu part) */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.6em; /* Reduce font size to 60% */
+        margin: 0; /* Ensure no extra margin on body */
+        padding: 0; /* Ensure no extra padding on body */
+    }
+
+    header, footer {
+        width: 100vw; /* Full viewport width */
+        position: relative; /* Ensure positioning does not cause overflow */
+        left: 0; /* Align with viewport edge */
+        right: 0; /* Align with viewport edge */
+        box-sizing: border-box; /* Include padding in width calculations */
+        padding: 40px 0; /* Increase padding for header and footer */
+    }
+
+    #logo {
+        max-width: 50%; /* Scale down logo width to 50% */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    nav {
+        padding: 20px 0; /* Increase padding for navigation */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Adjust spacing to fit smaller screen */
+    }
+
+    .item {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 45%; /* Adjust max-width to fit content */
+        padding: 5px; /* Reduce padding for smaller screens */
+        margin-bottom: 10px; /* Adjust margin for consistency */
+    }
+
+    #item-list {
+        max-height: 300px; /* Adjust max-height to fit content */
+    }
+
+    #order {
+        padding: 15px; /* Adjust padding for consistency */
+        margin: 20px auto; /* Center and adjust margins */
+        max-width: 90%; /* Scale max-width to 90% */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller scale */
+        border: 1px solid  rgb(10, 118, 69); /* Adjust border size */
+    }
+
+    .delivery-label {
+        font-size: 12px; /* Decrease font-size for smaller screens */
+        margin-left: 5px; /* Adjust margin for consistency */
+    }
+
+    #total {
+        font-size: 16px; /* Decrease font-size for smaller screens */
+        padding: 8px; /* Adjust padding for consistency */
+    }
+
+    #order h2 {
+        font-size: 20px; /* Decrease font-size for smaller screens */
+        margin-bottom: 15px; /* Adjust margin for consistency */
+    }
+
+    .menu-category h3 {
+        font-size: 12.8px; /* Decrease font-size by 20% */
+    }
+
+    .menu-item {
+        margin-bottom: 10px; /* Adjust margin for consistency */
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: flex-start;
+    }
+
+    .menu-item img {
+        width: 120px; /* Increase width of images further */
+        height: 60px; /* Decrease height of images to maintain proportion */
+        object-fit: cover; /* Ensure image aspect ratio is preserved */
+        margin-right: 10px; /* Adjust margin for consistency */
+    }
+
+    .menu-item h4 {
+        font-size: 14px; /* Decrease font-size for smaller screens */
+    }
+
+    .menu-item p {
+        font-size: 12px; /* Decrease font-size for smaller screens */
+    }
+
+    #item-list h3 {
+        font-size: 16px; /* Decrease font-size for smaller screens */
+    }
+}
 
     </style>
-    
 </head>
 
 <body>
 
     <header>
-        <img src="C:\1_A\عشوائيات\تصميم\PHOTOSHOP\1-brost\صور\292325583_7667735806629722_8671269333182636369_n.png" alt="Broast Logo" id="logo">
-        <h1>Broast Restaurant</h1>
+        <img src="https://i.ibb.co/p4Q1Fzs/logooo.png" alt="Broast Logo" id="logo">
+        <h1>CHICKEN BROAST</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#kids-meals">Menu</a></li>
+            <li><a href="#menu">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#location">Location</a></li>
             <li><a href="#order">Calculate Order</a></li>
@@ -363,189 +493,408 @@ footer {
         </nav>
     <!-- MENU  _____________________________________________________________________________________________________________________________________________________-->
         <section  class="menu_4">
-            <h2 class="menu_5">Menu</h2>
+            <h2  id="menu" class="menu_5">Menu</h2>
             
             <!-- kids-meals  _____________________________________________________________________________________________________________________________________________________-->
-            <section   class="menu-category menu_6" id="kids-meals">
+            <section  style="display: inline; " class="menu-category menu_6" id="kids-meals">
                 <h3 class="menu_7">Kids Meals</h3>
-                <div class="menu-items menu_8">
+                <div  class="menu-items menu_8">
                     <div id="MENU_DIVS"  class="menu-item menu_9">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\kids.png" alt="Happy Meal Nuggets">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/pKXmm3H/kids.png" alt="Happy Meal Nuggets">
                         <div>
                             <h4 class="menu_10">Happy Meal Nuggets</h4>
-                            <p class="menu_11">Price: 70 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <p id="PRICES" class="menu_11">70</p>
+                            <h3>  خمس قطع ناجتس  - قطعة خبز - بطاطس صغير - عصير صغير</h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_9">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\kids.png" alt="Happy Meal Nuggets">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/pKXmm3H/kids.png" alt="Happy Meal Nuggets">
                         <div>
-                            <h4 class="menu_10">Happy Meal Nuggets</h4>
-                            <p class="menu_11">Price: 70 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_10"> HAPPY MEAL BURGER</h4>
+                            <p id="PRICES" class="menu_11">70</p>
+                            <h3> ساندويتش برجر - بطاطس صغير - عصير صغير</h3>
                         </div>
                     </div>
-                    <div id="MENU_DIVS"  class="menu-item menu_9">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\kids.png" alt="Happy Meal Nuggets">
-                        <div>
-                            <h4 class="menu_10">Happy Meal Nuggets</h4>
-                            <p class="menu_11">Price: 70 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
-                        </div>
-                    </div>
+                    
                 </div>
             </section>
             
             <!-- side-items  _____________________________________________________________________________________________________________________________________________________-->
-            <section  class="menu-category menu_12" id="side-items">
+            <section style="display: inline;"  class="menu-category menu_12" id="side-items">
                 <h3 class="menu_13">Side Items</h3>
                 <div class="menu-items menu_14">
-                    <div id="MENU_DIVS"  class="menu-item menu_15">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\side.png" alt="Chily Tiger Sauce">
+                    <div   id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
                         <div>
-                            <h4 class="menu_16">Chily Tiger Sauce</h4>
-                            <p class="menu_17">Price: 12 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_16">قطعة دجاج</h4>
+                            <p id="PRICES" class="menu_17">48</p>
+                        
+                        </div>
+                    </div>
+                    <div  id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">قطعة كريسبي</h4>
+                            <p id="PRICES" class="menu_17">32</p>
+                            
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_15">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\side.png" alt="Chily Tiger Sauce">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
                         <div>
-                            <h4 class="menu_16">Chily Tiger Sauce</h4>
-                            <p class="menu_17">Price: 12 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_16">ارز مبهر</h4>
+                            <p id="PRICES" class="menu_17">17</p>
+                            
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_15">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\side.png" alt="Chily Tiger Sauce">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
                         <div>
-                            <h4 class="menu_16">Chily Tiger Sauce</h4>
-                            <p class="menu_17">Price: 12 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_16">ريزو بسمتي</h4>
+                            <p id="PRICES" class="menu_17">60</p>
+                            
                         </div>
                     </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">هاليبينو ستكس</h4>
+                            <p id="PRICES" class="menu_17">60</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">فتة ريزو</h4>
+                            <p id="PRICES" class="menu_17">70</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">صوص جبنة</h4>
+                            <p id="PRICES" class="menu_17">15</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">ثومية</h4>
+                            <p id="PRICES" class="menu_17">12</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">صوص شيلي تايجر</h4>
+                            <p id="PRICES" class="menu_17">12</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">قطعة خبز</h4>
+                            <p id="PRICES" class="menu_17">1.5</p>
+                           
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">كولسلو</h4>
+                            <p id="PRICES" class="menu_17">12</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">فلفل هاليبينو</h4>
+                            <p id="PRICES" class="menu_17">10</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">بيبسي</h4>
+                            <p style="width: 100px; border-radius: 0%;border: solid white 2px;" id="PRICES" class="menu_17">12 CAN</p>
+                            <p style="width: 100px;border-radius: 0%;border: solid white 2px;" id="PRICES" class="menu_17">20 LTR</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">مياة</h4>
+                            <p id="PRICES" class="menu_17">6</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">عصير جهينة</h4>
+                            <p id="PRICES" class="menu_17">12</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">بطاطس </h4>
+                            <p id="PRICES" class="menu_17">30</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_15">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/bKKnLFS/side.png" alt="Chily Tiger Sauce">
+                        <div>
+                            <h4 class="menu_16">بطاطس بالجبنة</h4>
+                            <p id="PRICES" class="menu_17">40</p>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </section>
             
             <!-- sandwiches  _____________________________________________________________________________________________________________________________________________________-->
-            <section  class="menu-category menu_18" id="sandwiches">
+            <section  style="display: inline;" class="menu-category menu_18" id="sandwiches">
                 <h3 class="menu_19">Sandwiches</h3>
                 <div class="menu-items menu_20">
                     <div id="MENU_DIVS"  class="menu-item menu_21">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\sandiwiches.png" alt="Jumbo Roll">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
                         <div>
-                            <h4 class="menu_22">Jumbo Roll</h4>
-                            <p class="menu_23">Price: 98 pounds</p>
+                            <h4 class="menu_22">سوبر دراجون SUPER DRAGON</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">L 75</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">XL 95</p>
                             <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_21">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\sandiwiches.png" alt="Jumbo Roll">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
                         <div>
-                            <h4 class="menu_22">Jumbo Roll</h4>
-                            <p class="menu_23">Price: 98 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_22">رومي بروست ROMI BROEST</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">L 83</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">XL 101</p>
+                            <h3>صدور الدجاج المتبلة مع الجبنة السايحةو الرومي المدخن و المايونيز</h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_21">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\sandiwiches.png" alt="Jumbo Roll">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
                         <div>
-                            <h4 class="menu_22">Jumbo Roll</h4>
-                            <p class="menu_23">Price: 98 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_22">تشكن كرسبي CHICKEN CRISPY</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">L 70</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">XL 90</p>
+                            <h3>صدور الدجاج المتبلة و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">سوبر بروست SUPER BROEST</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">L 75</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">XL 95</p>
+                            <h3>صدور الدجاج المتبلة  مع الجبنة السايحة و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">زينجر  ZINGER</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">L 75</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">XL 95</p>
+                            <h3>صدور الدجاج المتبلة الحارة جداَ و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">هاليبينو بروست HALLIBINO BROEST</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">L 80</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_23">XL 95</p>
+                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحةو فلفل الهاليبينو الحار جدا و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">برجر BURGER</h4>
+                            <p id="PRICES" class="menu_23">50</p>
+                            <h3>قطعة برجر والمايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">تشيز برجر  CHEESE BURGER</h4>
+                            <p id="PRICES" class="menu_23">55</p>
+                            <h3>قطعة برجر مع الجبنة السايحة و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">جامبو رول JUMBO ROLL</h4>
+                            <p id="PRICES" class="menu_23">98</p>
+                            <h3>صدور الدجاج المتبلة  مع الجبنة السايحة و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">رول بروست  ROLL BROEST</h4>
+                            <p id="PRICES" class="menu_23">70</p>
+                            <h3>صدور الدجاج المتبلة  مع مكعبات الطماطم و المايونيز</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_21">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/zN05L3n/sandiwiches.png" alt="Jumbo Roll">
+                        <div>
+                            <h4 class="menu_22">روند تشكن - ROUND CHICKEN</h4>
+                            <p id="PRICES" class="menu_23">70</p>
+                            <h3>صدور الدجاج المتبلة مع الجبنة السايحة و المايونيز</h3>
                         </div>
                     </div>
                 </div>
             </section>
             
             <!-- family-meals _____________________________________________________________________________________________________________________________________________________ -->
-            <section  class="menu-category menu_24" id="family-meals">
+            <section  style="display: inline;" class="menu-category menu_24" id="family-meals">
                 <h3 class="menu_25">Family Meals</h3>
                 <div class="menu-items menu_26">
                     <div id="MENU_DIVS"  class="menu-item menu_27">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\family.png" alt="Super Family">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/D4HYFYb/family.png" alt="Super Family">
                         <div>
-                            <h4 class="menu_28">Super Family</h4>
-                            <p class="menu_29">Price: 485 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_28">فاميلي ميل  FAMILY MEAL</h4>
+                            <p id="PRICES" class="menu_29">360</p>
+                            <h3>عدد 8 قطعه دجاج- 8 قطعه خبز- 1 بطاطس كبير - 2 كلوسلو</h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_27">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\family.png" alt="Super Family">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/D4HYFYb/family.png" alt="Super Family">
                         <div>
-                            <h4 class="menu_28">Super Family</h4>
-                            <p class="menu_29">Price: 485 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_28">سوبر فاميلي SUPER FAMILY</h4>
+                            <p id="PRICES" class="menu_29">485</p>
+                            <h3> عدد 12 قطعه دجاج- 8 قطعه خبز- 1 بطاطس كبير - 2 كلوسلو </h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_27">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\family.png" alt="Super Family">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/D4HYFYb/family.png" alt="Super Family">
                         <div>
-                            <h4 class="menu_28">Super Family</h4>
-                            <p class="menu_29">Price: 485 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_28">فاميلي ستربس FAMILY STRIPS</h4>
+                            <p id="PRICES" class="menu_29">510</p>
+                            <h3>عدد 20 قطعه ستربس - 8 قطعه خبز- 1 بطاطس كبير - 2 كلوسلو</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_27">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/D4HYFYb/family.png" alt="Super Family">
+                        <div>
+                            <h4 class="menu_28">بارتي ميل  PARTY MEAL</h4>
+                            <p id="PRICES" class="menu_29">445</p>
+                            <h3>عدد 6 قطعه ستربس - 6 قطعه دجاج - 8 قطعة خبز -  1 بطاطس كبير - 2 كلوسلو</h3>
                         </div>
                     </div>
                 </div>
             </section>
             
             <!-- special-sandwiches _________________________________________________________________________________________________________________________________________________ -->
-            <section  class="menu-category menu_30" id="special-sandwiches">
+            <section style="display: inline;" class="menu-category menu_30" id="special-sandwiches">
                 <h3 class="menu_31">Special Sandwiches</h3>
                 <div class="menu-items menu_32">
                     <div id="MENU_DIVS"  class="menu-item menu_33">
-                        <img id="MENU_IMG" src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\special.png" alt="Super Dragon">
+                        <img id="MENU_IMG" src="https://i.ibb.co/pdsC6Vz/special.png" alt="Super Dragon">
                         <div>
-                            <h4 class="menu_34">Super Dragon</h4>
-                            <p class="menu_35">Price: 95 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_34">سلامي بروست  SALAMI BROEST</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_35">L 83</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_35">XL 101</p>
+                            
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_33">
-                        <img id="MENU_IMG" src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\special.png" alt="Super Dragon">
+                        <img id="MENU_IMG" src="https://i.ibb.co/pdsC6Vz/special.png" alt="Super Dragon">
                         <div>
-                            <h4 class="menu_34">Super Dragon</h4>
-                            <p class="menu_35">Price: 95 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_34">تشكن بلوتشيز CHICKEN BLUE CHEESE</h4>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_35">L 75</p>
+                            <p style="width: 80px; border-radius: 8%;border: solid white 2px;" id="PRICES" class="menu_35">XL 95</p>
+                            
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_33">
-                        <img id="MENU_IMG" src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\special.png" alt="Super Dragon">
+                        <img id="MENU_IMG" src="https://i.ibb.co/pdsC6Vz/special.png" alt="Super Dragon">
                         <div>
-                            <h4 class="menu_34">Super Dragon</h4>
-                            <p class="menu_35">Price: 95 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_34">روند تشكن رومي  ROUND CHICKEN ROMI </h4>
+                            <p id="PRICES" class="menu_35">75</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_33">
+                        <img id="MENU_IMG" src="https://i.ibb.co/pdsC6Vz/special.png" alt="Super Dragon">
+                        <div>
+                            <h4 class="menu_34">روند تشكن سلامي  ROUND CHICKEN SALAMI</h4>
+                            <p id="PRICES" class="menu_35">75</p>
+                            
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_33">
+                        <img id="MENU_IMG" src="https://i.ibb.co/pdsC6Vz/special.png" alt="Super Dragon">
+                        <div>
+                            <h4 class="menu_34">روند تشكن ميكس ROUND CHICKEN MIX</h4>
+                            <p id="PRICES" class="menu_35">85</p>
+                            
                         </div>
                     </div>
                 </div>
             </section>
             
             <!-- individual-meals _____________________________________________________________________________________________________________________________________________________ -->
-            <section  class="menu-category menu_36" id="individual-meals">
+            <section style="display: inline;" class="menu-category menu_36" id="individual-meals">
                 <h3 class="menu_37">Individual Meals</h3>
                 <div class="menu-items menu_38">
                     <div id="MENU_DIVS"  class="menu-item menu_39">
-                        <img id="MENU_IMG" src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\individual.png" alt="Snack Box">
+                        <img id="MENU_IMG" src="https://i.ibb.co/fQSKY9r/individual.png" alt="Snack Box">
                         <div>
-                            <h4 class="menu_40">Snack Box</h4>
-                            <p class="menu_41">Price: 95 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_40">سناك بوكس Snack Box</h4>
+                            <p id="PRICES" class="menu_41">95</p>
+                            <h3>عدد 2 قطعة دجاج - 1 قطعة خبز - 1 بطاطس صغير</h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_39">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\individual.png" alt="Snack Box">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/fQSKY9r/individual.png" alt="Snack Box">
                         <div>
-                            <h4 class="menu_40">Snack Box</h4>
-                            <p class="menu_41">Price: 95 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_40">دينر بوكس DINNER BOX</h4>
+                            <p id="PRICES" class="menu_41">135</p>
+                            <h3>عدد 3 قطع دجاج - 2 قطعة خبز - 1 بطاطس صغير - 1 كولسلو</h3>
                         </div>
                     </div>
                     <div id="MENU_DIVS"  class="menu-item menu_39">
-                        <img id="MENU_IMG"  src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\individual.png" alt="Snack Box">
+                        <img id="MENU_IMG"  src="https://i.ibb.co/fQSKY9r/individual.png" alt="Snack Box">
                         <div>
-                            <h4 class="menu_40">Snack Box</h4>
-                            <p class="menu_41">Price: 95 pounds</p>
-                            <h3>صدور الدجاج المتبلة الحارة جداَ مع الجبنة السايحة و المايونيز</h3>
+                            <h4 class="menu_40">لايت كرسبي LIGHT CRISPY</h4>
+                            <p id="PRICES" class="menu_41">95</p>
+                            <h3>عدد 3 قطعة ستربس - 1 قطعة خبز - 1 بطاطس صغير</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_39">
+                        <img id="MENU_IMG" src="https://i.ibb.co/fQSKY9r/individual.png" alt="Snack Box">
+                        <div>
+                            <h4 class="menu_40">ميكس ميل MIX MEALS</h4>
+                            <p id="PRICES" class="menu_41">160</p>
+                            <h3> عدد 2 قطعه كريسبي - 2 قطعة دجاج - 1 بطاطس صغير - 2 قطعة خبز - ثومية - علبة ارز وسط</h3>
+                        </div>
+                    </div>
+                    <div id="MENU_DIVS"  class="menu-item menu_39">
+                        <img id="MENU_IMG" src="https://i.ibb.co/fQSKY9r/individual.png" alt="Snack Box">
+                        <div>
+                            <h4 class="menu_40">كرسبي بوكس CRISPY BOX</h4>
+                            <p id="PRICES" class="menu_41">135</p>
+                            <h3>عدد 5 قطعة كرسبي - 2 قطعة خبز - 1 بطاطس صغير - 1 كولسلو </h3>
                         </div>
                     </div>
                 </div>
@@ -596,36 +945,47 @@ footer {
                 <div id="total">Total: 0 pounds</div>
             </section>
        
-        <!-- LOCATION  _________________________________________________________________________________________________________________________________________________ -->
-        <section  id="location">
-            <h2>Location</h2>
-            <iframe style="border: 5px solid orange;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2831668518343!2d29.989442075057934!3d31.240583560912807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dac34e457c1d%3A0xb345f0adc7bf5a8b!2sChicken%20Broest!5e0!3m2!1sen!2seg!4v1721581499857!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        
+            
+
+      
+            <section>   
+                <!-- LOCATION  -->
+                <div id="location-contact" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!-- Location Section -->
+                    <div id="location" style="flex: 1; margin-right: 20px;">
+                        <h2>Location</h2>
+                        <iframe style="width: 100%; border: 2px solid rgb(10, 118, 69);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2831668518343!2d29.989442075057934!3d31.240583560912807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dac34e457c1d%3A0xb345f0adc7bf5a8b!2sChicken%20Broest!5e0!3m2!1sen!2seg!4v1721581499857!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>    
+                    
+                    <!-- Contact Section -->
+                    <div id="contact" style=" margin-top:170px; height: 200px; flex: 0 0 150px; text-align: center; padding: 20px; background-color: rgb(10, 118, 69); border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                        <h2 style="color: #333; margin-bottom: 20px;">Contact Us</h2>
+                        <div style="margin-bottom: 10px;">
+                            <label for="phone1" style="margin-right: 10px; font-weight: bold;">PHONE:</label>
+                            <a href="tel:035000949" id="phone1" style="color: orange; text-decoration: none;">5000949</a>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="phone2" style="margin-right: 10px; font-weight: bold;">PHONE:</label>
+                            <a href="tel:035044428" id="phone2" style="color:orange; text-decoration: none;">5044428</a>
+                        </div>
+                        <a href="https://www.facebook.com/ChickenBroest" target="_blank" title="Facebook" style="text-decoration: none;">
+                            <img src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\Screenshot 2024-08-13 064357.png" alt="Facebook" style="width: 35px; height: 35px; margin-top: 10px;">
+                        </a>
+                       
+                    </div>  
+                </div>
+            </section>
+                 
     </main>
     
-    <!-- CONTACT  _________________________________________________________________________________________________________________________________________________ -->
-    <section id="contact" style="text-align: center; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-        <h2 style="color: #333; margin-bottom: 20px;">Contact Us</h2>
-        <div style="margin-bottom: 10px;">
-            <label for="phone1" style="margin-right: 10px; font-weight: bold;">PHONE:</label>
-            <a href="tel:035000949" id="phone1" style="color: #0056b3; text-decoration: none;">5000949</a>
-        </div>
-        <div style="margin-bottom: 20px;">
-            <label for="phone2" style="margin-right: 10px; font-weight: bold;">PHONE:</label>
-            <a href="tel:035044428" id="phone2" style="color: #0056b3; text-decoration: none;">5044428</a>
-        </div>
-        <a href="https://www.facebook.com/ChickenBroest" target="_blank" title="Facebook" style="text-decoration: none;">
-            <img src="A:\FOE\SELF LEARNING CORCES\WEB DEVELOPMENT\A_PROJECTS\CHICKEN BROAST\FACEBOOK.png" alt="Facebook" style="width: 35px; height: 35px; margin-top: 10px;">
-        </a>
-    </section>
+
     
     <!-- FOOTER_COPY RIGHTS _________________________________________________________________________________________________________________________________________________ -->
     <footer>
         <p>&copy; 2024 Broast Restaurant. All rights reserved.</p>
     </footer>
 
-    <script>
+    <script >
         document.addEventListener('DOMContentLoaded', () => {
     const items = [
         { id: 1, name: "Happy Meal Nuggets", price: 70 },
