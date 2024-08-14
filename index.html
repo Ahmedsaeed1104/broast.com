@@ -384,6 +384,10 @@ height: 25px;
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+        .quantity{
+    margin-left: 10px; 
+    width: 30px;
+}
 
 /* Mobile Phone Adjustments (Increase photo width more in menu part) */
 @media (max-width: 768px) {
@@ -428,14 +432,14 @@ height: 25px;
         max-height: 300px; /* Adjust max-height to fit content */
     }
 
-    #order {
+#order {
         padding: 15px; /* Adjust padding for consistency */
-        margin: 20px auto; /* Center and adjust margins */
-        margin-left: 45px;
-        max-width: 90%; /* Scale max-width to 90% */
+        margin: 10px auto; /* Center and adjust margins */
+        width: 420px; /* Scale max-width to 90% */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller scale */
         border: 1px solid  rgb(10, 118, 69); /* Adjust border size */
     }
+
 
     .delivery-label {
         font-size: 12px; /* Decrease font-size for smaller screens */
@@ -485,23 +489,31 @@ height: 25px;
     height: 300px;
 }
 #contact{
-
+    font-family: 'Cairo', sans-serif; /* Stylish Arabic font */
     margin-top:100px; 
     margin-left: 40px;
     margin-right: 0;
-    height: 150px; 
-    flex: 0 0 90px; 
+    height: 180px; 
+    flex: 0 0 100px; 
     text-align: center; 
     padding: 10px; 
     background-color: rgb(10, 118, 69); 
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+#location-contact
+{
+    width: 420px;
+}
     .menu_14{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%; 
+}
+    .quantity{
+    margin-left: 10px; 
+    width: 12px;
 }
 }
 
@@ -953,7 +965,7 @@ height: 25px;
 
 
         
-          <!-----------CALCULATE ORDER--------------------->
+        <!-----------CALCULATE ORDER--------------------->
         <section id="order">
             <h2>Calculate Order</h2>
             <div id="item-list">
@@ -962,277 +974,277 @@ height: 25px;
                 <div class="item">
                     <input type="checkbox" id="item1" data-price="70">
                     <span>Happy Meal Nuggets</span>
-                    <input type="number" id="quantity1" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity1" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item2" data-price="70">
                     <span>Happy Meal Burger</span>
-                    <input type="number" id="quantity2" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity2" min="1" value="1" class="quantity">
                 </div>
     
                 <!---------------------------SIDE ITEMS-------------------------------------->
                 <div class="item">
                     <input type="checkbox" id="item3" data-price="48">
                     <span>قطعة دجاج</span>
-                    <input type="number" id="quantity3" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity3" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item4" data-price="32">
                     <span>قطعة كريسبي</span>
-                    <input type="number" id="quantity4" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity4" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item5" data-price="17">
                     <span>ارز مبهر</span>
-                    <input type="number" id="quantity5" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity5" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item6" data-price="60">
                     <span>ريزو بسمتي</span>
-                    <input type="number" id="quantity6" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity6" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item7" data-price="60">
                     <span>هاليبينو ستكس</span>
-                    <input type="number" id="quantity7" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity7" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item8" data-price="70">
                     <span>فتة ريزو</span>
-                    <input type="number" id="quantity8" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity8" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item9" data-price="15">
                     <span>صوص جبنة</span>
-                    <input type="number" id="quantity9" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity9" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item10" data-price="12">
                     <span>ثومية</span>
-                    <input type="number" id="quantity10" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity10" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item11" data-price="12">
                     <span>صوص شيلي تايجر</span>
-                    <input type="number" id="quantity11" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity11" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item12" data-price="1.5">
                     <span>قطعة خبز</span>
-                    <input type="number" id="quantity12" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity12" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item13" data-price="12">
                     <span>كولسلو</span>
-                    <input type="number" id="quantity13" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity13" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item14" data-price="10">
                     <span>فلفل هاليبينو</span>
-                    <input type="number" id="quantity14" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity14" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item15" data-price="12">
                     <span>بيبسي CAN</span>
-                    <input type="number" id="quantity15" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity15" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item16" data-price="20">
                     <span>بيبسي LTR</span>
-                    <input type="number" id="quantity16" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity16" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item17" data-price="6">
                     <span>مياة</span>
-                    <input type="number" id="quantity17" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity17" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item18" data-price="12">
                     <span>عصير جهينة</span>
-                    <input type="number" id="quantity18" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity18" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item19" data-price="30">
                     <span>بطاطس</span>
-                    <input type="number" id="quantity19" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity19" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item20" data-price="40">
                     <span>بطاطس بالجبنة</span>
-                    <input type="number" id="quantity20" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity20" min="1" value="1" class="quantity">
                 </div>
     
                 <!----------------------------SANDWICHES------------------------------------->
                 <div class="item">
                     <input type="checkbox" id="item21" data-price="75">
                     <span>سوبر دراجون SUPER DRAGON-L</span>
-                    <input type="number" id="quantity21" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity21" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item22" data-price="95">
                     <span>سوبر دراجون SUPER DRAGON-XL</span>
-                    <input type="number" id="quantity22" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity22" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item23" data-price="83">
                     <span>رومي بروست ROMI BROEST-L</span>
-                    <input type="number" id="quantity23" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity23" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item24" data-price="101">
                     <span>رومي بروست ROMI BROEST-XL</span>
-                    <input type="number" id="quantity24" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity24" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item25" data-price="70">
                     <span>تشكن كرسبي CHICKEN CRISPY-L</span>
-                    <input type="number" id="quantity25" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity25" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item26" data-price="90">
                     <span>تشكن كرسبي CHICKEN CRISPY-XL</span>
-                    <input type="number" id="quantity26" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity26" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item27" data-price="75">
                     <span>سوبر بروست SUPER BROEST-L</span>
-                    <input type="number" id="quantity27" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity27" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item28" data-price="95">
                     <span>سوبر بروست SUPER BROEST-XL</span>
-                    <input type="number" id="quantity28" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity28" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item29" data-price="70">
                     <span>زينجر ZINGER-L</span>
-                    <input type="number" id="quantity29" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity29" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item30" data-price="90">
                     <span>زينجر ZINGER-XL</span>
-                    <input type="number" id="quantity30" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity30" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item31" data-price="80">
                     <span>هاليبينو بروست HALLIBINO BROEST-L</span>
-                    <input type="number" id="quantity31" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity31" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item32" data-price="95">
                     <span>هاليبينو بروست HALLIBINO BROEST-XL</span>
-                    <input type="number" id="quantity32" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity32" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item33" data-price="50">
                     <span>برجر BURGER</span>
-                    <input type="number" id="quantity33" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity33" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item34" data-price="55">
                     <span>تشيز برجر CHEESE BURGER</span>
-                    <input type="number" id="quantity34" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity34" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item35" data-price="98">
                     <span>جامبو رول JUMBO ROLL</span>
-                    <input type="number" id="quantity35" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity35" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item36" data-price="70">
                     <span>رول بروست ROLL BROEST</span>
-                    <input type="number" id="quantity36" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity36" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item37" data-price="70">
                     <span>روند تشكن - ROUND CHICKEN</span>
-                    <input type="number" id="quantity37" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity37" min="1" value="1" class="quantity">
                 </div>
     
                 <!----------------------------FAMILY MEALS------------------------------------->
                 <div class="item">
                     <input type="checkbox" id="item42" data-price="75">
                     <span>روند تشكن رومي ROUND CHICKEN ROMI</span>
-                    <input type="number" id="quantity42" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity42" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item39" data-price="485">
                     <span>سوبر فاميلي SUPER FAMILY</span>
-                    <input type="number" id="quantity39" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity39" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item40" data-price="510">
                     <span>فاميلي ستربس FAMILY STRIPS</span>
-                    <input type="number" id="quantity40" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity40" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item41" data-price="445">
                     <span>بارتي ميل PARTY MEAL</span>
-                    <input type="number" id="quantity41" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity41" min="1" value="1" class="quantity">
                 </div>
     
                 <!----------------------------SPECIAL SANDWICHES------------------------------------->
                 <div class="item">
                     <input type="checkbox" id="item38" data-price="360">
                     <span>فاميلي ميل FAMILY MEAL</span>
-                    <input type="number" id="quantity38" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity38" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item43" data-price="83">
                     <span>سلامي بروست SALAMI BROEST-L</span>
-                    <input type="number" id="quantity43" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity43" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item44" data-price="101">
                     <span>سلامي بروست SALAMI BROEST-XL</span>
-                    <input type="number" id="quantity44" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity44" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item45" data-price="75">
                     <span>تشكن بلوتشيز CHICKEN BLUE CHEESE-L</span>
-                    <input type="number" id="quantity45" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity45" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item46" data-price="95">
                     <span>تشكن بلوتشيز CHICKEN BLUE CHEESE-XL</span>
-                    <input type="number" id="quantity46" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity46" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item47" data-price="75">
                     <span>روند تشكن سلامي ROUND CHICKEN SALAMI</span>
-                    <input type="number" id="quantity47" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity47" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item48" data-price="85">
                     <span>روند تشكن ميكس ROUND CHICKEN MIX</span>
-                    <input type="number" id="quantity48" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity48" min="1" value="1" class="quantity">
                 </div>
     
                 <!---------------------------- INDIVIDUAL MEALS ------------------------------------->
                 <div class="item">
                     <input type="checkbox" id="item49" data-price="95">
                     <span>سناك بوكس Snack Box</span>
-                    <input type="number" id="quantity49" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity49" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item50" data-price="135">
                     <span>دينر بوكس DINNER BOX</span>
-                    <input type="number" id="quantity50" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity50" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item51" data-price="95">
                     <span>لايت كرسبي LIGHT CRISPY</span>
-                    <input type="number" id="quantity51" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity51" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item52" data-price="160">
                     <span>ميكس ميل MIX MEALS</span>
-                    <input type="number" id="quantity52" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity52" min="1" value="1" class="quantity">
                 </div>
                 <div class="item">
                     <input type="checkbox" id="item53" data-price="135">
                     <span>كرسبي بوكس CRISPY BOX</span>
-                    <input type="number" id="quantity53" min="1" value="1" style="margin-left: 10px; width: 30px;">
+                    <input type="number" id="quantity53" min="1" value="1" class="quantity">
                 </div>
             </div>
     
