@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    max-width: 1200px; /* Restricts content width */
+    max-width: 1400px; /* Restricts content width */
     margin: 0 auto; /* Centers content */
 }
 
@@ -369,7 +369,8 @@ height: 25px;
 
 
 }
-        #LOC{
+
+#LOC{
     width: 100%; 
     height: 400px;
 }
@@ -384,9 +385,108 @@ height: 25px;
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-        .quantity{
+
+.quantity{
     margin-left: 10px; 
     width: 30px;
+}
+ 
+.order-summary-container {
+    margin-top: 10px;
+    text-align: right;
+}
+
+#showOrderBtn {
+    padding: 10px 20px;
+    background-color: #f4b400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showOrderBtn:hover {
+    background-color: #e09c00;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#orderDetails {
+    margin-top: 20px;
+}
+
+#orderDetails p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#totalOrderAmount {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+#orderDetails table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#orderDetails th, #orderDetails td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#orderDetails th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#orderDetails td {
+    color: black;
+}
+
+#orderDetails td:first-child {
+    color: orange;
 }
 
 /* Mobile Phone Adjustments (Increase photo width more in menu part) */
@@ -432,14 +532,13 @@ height: 25px;
         max-height: 300px; /* Adjust max-height to fit content */
     }
 
-#order {
+    #order {
         padding: 15px; /* Adjust padding for consistency */
         margin: 10px auto; /* Center and adjust margins */
-        width: 420px; /* Scale max-width to 90% */
+        width: 440px; /* Scale max-width to 90% */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller scale */
         border: 1px solid  rgb(10, 118, 69); /* Adjust border size */
     }
-
 
     .delivery-label {
         font-size: 12px; /* Decrease font-size for smaller screens */
@@ -505,13 +604,13 @@ height: 25px;
 {
     width: 420px;
 }
-    .menu_14{
+.menu_14{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%; 
 }
-    .quantity{
+.quantity{
     margin-left: 10px; 
     width: 12px;
 }
@@ -957,14 +1056,14 @@ height: 25px;
                 </div>
             </section>
         </section>
-        
-
-
-
-
-
 
         
+
+
+
+
+
+
         <!-----------CALCULATE ORDER--------------------->
         <section id="order">
             <h2>Calculate Order</h2>
@@ -1252,6 +1351,20 @@ height: 25px;
                 <input type="checkbox" id="delivery" data-price="15">
                 <span class="delivery-label">With Delivery +15 pounds</span>
             </div>
+            
+            <div class="order-summary-container">
+                <button id="showOrderBtn">My Order</button>
+            </div>
+            
+            <div id="orderSummaryModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>ORDER</h2>
+                    <div id="orderDetails"></div>
+                    <h3 id="totalOrderAmount"></h3>
+                </div>
+            </div>
+            
     
             <div id="total">Total: 0 pounds</div>
         </section>
@@ -1259,13 +1372,13 @@ height: 25px;
             
 
       
-            <section>   
+            <section >   
                 <!-- LOCATION  -->
-                <div id="location-contact" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <div id="location-contact" style="display: flex; justify-content: space-between; align-items: flex-start; ">
                     <!-- Location Section -->
                     <div id="location" style="flex: 1; margin-right: 20px;">
                         <h2>Location</h2>
-                        <iframe id="LOC" style=" border: 2px solid rgb(10, 118, 69);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2831668518343!2d29.989442075057934!3d31.240583560912807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dac34e457c1d%3A0xb345f0adc7bf5a8b!2sChicken%20Broest!5e0!3m2!1sen!2seg!4v1721581499857!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe id="LOC" style="border: 2px solid rgb(10, 118, 69);"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.2831668518343!2d29.989442075057934!3d31.240583560912807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dac34e457c1d%3A0xb345f0adc7bf5a8b!2sChicken%20Broest!5e0!3m2!1sen!2seg!4v1721581499857!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>    
                     
                     <!-- Contact Section -->
@@ -1297,7 +1410,7 @@ height: 25px;
     </footer>
 
     <script >
-function calculateTotal() {
+        function calculateTotal() {
     let total = 0;
     const items = document.querySelectorAll('.item');
     
@@ -1326,6 +1439,68 @@ document.querySelectorAll('input[type="checkbox"], input[type="number"]').forEac
 
 // Initial calculation
 calculateTotal();
+
+
+
+document.getElementById('showOrderBtn').addEventListener('click', function() {
+    const orderDetails = document.getElementById('orderDetails');
+    const totalOrderAmount = document.getElementById('totalOrderAmount');
+    let orderSummary = '<table><thead><tr><th>Quantity</th><th>Item Name</th><th>Price</th></tr></thead><tbody>';
+    let total = 0;
+
+    const items = document.querySelectorAll('.item');
+    items.forEach(item => {
+        const checkbox = item.querySelector('input[type="checkbox"]');
+        const quantityInput = item.querySelector('input[type="number"]');
+        const price = parseFloat(checkbox.dataset.price);
+        const quantity = parseInt(quantityInput.value);
+        
+        if (checkbox.checked) {
+            const itemName = checkbox.nextElementSibling.textContent;
+            const itemTotal = price * quantity;
+            orderSummary += `
+                <tr>
+                    <td style="color: orange; text-align: center;">${quantity}</td>
+                    <td style="color: black; text-align: center;">${itemName}</td>
+                    <td style="color: black; text-align: center;">${itemTotal} pounds</td>
+                </tr>`;
+            total += itemTotal;
+        }
+    });
+
+    const deliveryCheckbox = document.getElementById('delivery');
+    if (deliveryCheckbox.checked) {
+        const deliveryPrice = parseFloat(deliveryCheckbox.dataset.price);
+        total += deliveryPrice;
+        orderSummary += `
+            <tr>
+                <td style="color: orange; text-align: center;">1</td>
+                <td style="color: black; text-align: center;">Delivery</td>
+                <td style="color: black; text-align: center;">${deliveryPrice} pounds</td>
+            </tr>`;
+    }
+
+    orderSummary += '</tbody></table>';
+    orderDetails.innerHTML = orderSummary || '<p>No items selected.</p>';
+    totalOrderAmount.textContent = `Total: ${total} pounds`;
+
+    document.getElementById('orderSummaryModal').style.display = 'block';
+});
+
+// Close the modal when the user clicks the close button
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('orderSummaryModal').style.display = 'none';
+});
+
+// Close the modal when the user clicks outside of the modal content
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('orderSummaryModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+});
+
+
 
     </script>
 </body>
