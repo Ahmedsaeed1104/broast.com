@@ -399,20 +399,23 @@ height: 25px;
 }
  
 .order-summary-container {
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: right;
     font-family: 'Cairo', sans-serif; /* Stylish Arabic font */
 }
 
 #showOrderBtn {
     padding: 10px 20px;
+    font-size: 16px;
     background-color: #f4b400;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Cairo', sans-serif; /* Stylish Arabic font */
+    transition: background-color 0.3s ease;
 }
+
 
 #showOrderBtn:hover {
     background-color: #e09c00;
@@ -511,6 +514,41 @@ height: 25px;
     font-family: 'Cairo', sans-serif; /* Stylish Arabic font */
 }
 
+/* Style for the CLEAR button */
+.CLEAR_button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.CLEAR_button button {
+    background-color: #ff4500; /* Bright orange color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.CLEAR_button button:hover {
+    background-color: #ff6347; /* Slightly lighter orange on hover */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu_3 a {
+    transition: opacity 2s ease;
+    opacity: 1;
+}
+
+.menu_3 a:active {
+    opacity: 0.5; /* Optional effect on click */
+}
+
 /* Mobile Phone Adjustments (Increase photo width more in menu part) */
 @media (max-width: 768px) {
     body {
@@ -605,7 +643,7 @@ height: 25px;
     #item-list h3 {
         font-size: 16px; /* Decrease font-size for smaller screens */
     }
-      #LOC{
+    #LOC{
     width: 115%; 
     height: 250px;
 }
@@ -642,9 +680,19 @@ height: 25px;
     margin-left: 10px; 
     width: 12px;
 }
-    .menu_4 {
+.menu_4 {
     padding: 20px;
     width: 395px;
+}
+#showOrderBtn {
+    padding: 5px 10px;
+    font-size: 12px;
+
+}
+.CLEAR_button button {
+    padding: 5px 10px;
+    font-size: 12px;
+
 }
 }
 
@@ -1385,13 +1433,19 @@ height: 25px;
             </div>
     
             <div class="delivery-container">
-                <input type="checkbox" id="delivery" data-price="15">
+                <input style="width:20px ; height:20px ;" type="checkbox" id="delivery" data-price="15">
                 <span class="delivery-label">With Delivery +15 جنية</span>
             </div>
             
-            <div class="order-summary-container">
+            
+            <span class="CLEAR_button">
+                <button id="CLEAR_button">CLEAR</button>
+            </span>
+            <center>
+            <span  class="order-summary-container">
                 <button id="showOrderBtn">My Order</button>
-            </div>
+            </span>
+            </center>
             
             <div id="orderSummaryModal" class="modal">
                 <div class="modal-content">
@@ -1402,6 +1456,7 @@ height: 25px;
                 </div>
             </div>
             
+
     
             <div style="font-family: 'Cairo', sans-serif; /* Stylish Arabic font */" id="total">Total: 0 pounds</div>
         </section>
@@ -1420,7 +1475,7 @@ height: 25px;
                     
                     <!-- Contact Section -->
                     <div id="contact" >
-                        <h2 style="font-family: 'Cairo', sans-serif; /* Stylish Arabic font */color: #333; margin-bottom: 20px;">Contact Us</h2>
+                        <h2 style="font-family: 'Cairo', sans-serif; /* Stylish Arabic font */ color: #333; margin-bottom: 20px;">Contact Us</h2>
                         <div style="margin-bottom: 10px;">
                             <label for="phone1" style="margin-right: 10px; font-weight: bold;">PHONE:</label>
                             <a href="tel:035000949" id="phone1" style="color: orange; text-decoration: none;">5000949</a>
@@ -1447,7 +1502,7 @@ height: 25px;
     </footer>
 
     <script >
-function calculateTotal() {
+        function calculateTotal() {
     let total = 0;
     const items = document.querySelectorAll('.item');
     
@@ -1537,6 +1592,22 @@ window.addEventListener('click', function(event) {
     }
 });
 
+
+// Add event listener to the CLEAR button
+document.getElementById('CLEAR_button').addEventListener('click', function() {
+    // Uncheck all checkboxes
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+
+    // Reset the quantity of items to 1
+    document.querySelectorAll('input[type="number"]').forEach(quantityInput => {
+        quantityInput.value = 1;
+    });
+
+    // Recalculate the total after clearing
+    calculateTotal();
+});
 
 
     </script>
