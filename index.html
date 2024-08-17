@@ -87,11 +87,14 @@ footer {
     background-color: rgb(10, 118, 69);
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 0.2px 0;
+    font-size: 12px;
     position: relative;
     bottom: 0;
     width: 100%;
     font-family: 'Cairo', sans-serif; /* Stylish Arabic font */
+    position: fixed;
+    
 }
 
 /* Order Section */
@@ -250,23 +253,8 @@ footer {
     color: #777;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .menu-category, .item {
-        max-width: 100%; /* Full width on smaller screens */
-        margin: 10px 0;
-    }
 
-    nav ul li {
-        display: block; /* Vertical navigation on smaller screens */
-        margin: 10px 0;
-    }
 
-    header, footer {
-        text-align: center;
-        padding: 15px 0;
-    }
-}
 
 /* Additional Styles */
 .menu_1 {
@@ -549,6 +537,23 @@ html {
     opacity: 0.5; /* Optional effect on click */
 }
 
+
+@media (max-width: 768px) {
+    .menu-category, .item {
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        display: block; /* Vertical navigation on smaller screens */
+        margin: 10px 0;
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 15px 0;
+    }
+}
 /* Mobile Phone Adjustments (Increase photo width more in menu part) */
 @media (max-width: 768px) {
     body {
@@ -557,7 +562,7 @@ html {
         padding: 0; /* Ensure no extra padding on body */
     }
 
-    header, footer {
+    header {
         width: 480PX; /* Full viewport width */
         position: relative; /* Ensure positioning does not cause overflow */
         left: 0; /* Align with viewport edge */
@@ -565,7 +570,15 @@ html {
         box-sizing: border-box; /* Include padding in width calculations */
         padding: 40px 0; /* Increase padding for header and footer */
     }
-
+    footer{
+        width: 480PX; /* Full viewport width */
+        position: fixed; /* Ensure positioning does not cause overflow */
+        font-size: 10px;
+        left: 0; /* Align with viewport edge */
+        right: 0; /* Align with viewport edge */
+        box-sizing: border-box; /* Include padding in width calculations */
+        padding: 5px 0; /* Increase padding for header and footer */
+    }
     #logo {
         max-width: 90%; /* Scale down logo width to 50% */
         height: auto; /* Maintain aspect ratio */
@@ -573,14 +586,20 @@ html {
 
     nav {
         padding: 20px 0; /* Increase padding for navigation */
-        display: none;
+        width: 480px;
     }
 
     nav ul li {
         margin: 0 10px; /* Adjust spacing to fit smaller screen */
+        display: inline;
+        font-size: 17px;
+    }
+    .menu_1{
         display: none;
     }
-
+    #menu_menu{
+        display: none;
+    }
     .item {
         width: 100%; /* Full width on smaller screens */
         max-width: 45%; /* Adjust max-width to fit content */
@@ -708,7 +727,7 @@ html {
 
     <nav>
         <ul>
-            <li><a href="#menu">Menu</a></li>
+            <li  id="menu_menu"><a href="#menu">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#location">Location</a></li>
             <li><a href="#order">Calculate Order</a></li>
@@ -1498,7 +1517,7 @@ html {
     
     <!-- FOOTER_COPY RIGHTS _________________________________________________________________________________________________________________________________________________ -->
     <footer>
-        <p>&copy; جميع حقوق النشر لصاحب الموقع المهندس احمد سعيد</p>
+        <p>&copy; هذا الموقع تم انشائة بواسطة شخص يحب هذا المطعم [ احمد سعيد ] </p>
     </footer>
 
     <script >
